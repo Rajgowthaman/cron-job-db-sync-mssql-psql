@@ -1,0 +1,24 @@
+{
+    "port": 9980,
+    "databases": {
+        "master": {
+            "database": "mssql_master",
+            "username": "mssql_master",
+            "password": "Open@123",
+            "host": "localhost",
+            "port": 1433,
+            "dialect": "mssql"
+        },
+        "slave": {
+            "database": "postgre_slave",
+            "username": "postgres",
+            "password": "Open@123",
+            "host": "localhost",
+            "port": 5432,
+            "dialect": "postgres",
+            "schema": "public"
+        }
+    },
+    "tablesTobeSynced" : ["All"] ,
+    "cronTimeInMinutes" : 1
+}
